@@ -18,15 +18,16 @@
         form{
             background-color: white;
             width: 370px;
-            height: 350px;
+            height: 380px;
             margin: auto;
             border-radius: 10px;
             padding: 20px;
+            margin-top: 150px;
         }
         h1{
             color: navy;
         }
-        #email, #pass, #login{
+        #email, #pass, #login, #cna{
             width: 100%;
             padding: 20px;
             border-radius: 10px;
@@ -39,9 +40,19 @@
             font-size: 18px;
             font-weight: bold;
         }
+        #cna{
+            background-color: green;
+            border: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
         a{
             text-decoration: none;
             color: blue;
+        }
+        div{
+            border-top: 1px solid rgba(0,0,0,.2);
         }
     </style>
 </head>
@@ -49,11 +60,15 @@
     <header>
         <h1>MyBook</h1>
     </header>
+    <h2>My Book is the No. 1 Social Media Site! <br> Join Now!</h2>
     <form action="https://www.google.com/">
         <input type="email" id="email" placeholder="Email or Phone Number"><br><br>
         <input type="password" id="pass" placeholder="Password"><br><br>
         <input type="submit" value="Log In" id="login"><br><br>
-        <a href="">Forget password</a>
+        <a href="">Forget password</a><br><br>
+        <div><br>
+            <button id="cna">Create New Account</button>
+        </div>
     </form>
     
 </body>
